@@ -43,27 +43,28 @@
     <div class="form-group">
       <div class="col-md-4">
         <script type="text/javascript">
-            function yesnoCheck() {
-                if (document.getElementById('yesCheck').checked) {
-                    document.getElementById('ifYes').style.display = 'block';
-                }
-                else document.getElementById('ifYes').style.display = 'none';
+            function disableTxt() {
+                document.getElementById("myText").disabled = true;
             }
+
+            function undisableTxt() {
+                document.getElementById("myText").disabled = false;
+              }
         </script>
         <label class="radio-inline">
-         <input name="DM" type="radio" onclick="javascript:yesnoCheck();" id="yesCheck"> 
+         <input name="DM" type="radio" onclick="undisableTxt();">
           Yes
         </label> 
         <label class="radio-inline">
-         <input name="DM" type="radio" onclick="javascript:yesnoCheck();" id="noCheck">
+         <input name="DM" type="radio" onclick="disableTxt();"> 
           No
         </label> 
       </div>
-    <div id="ifYes" style="display:none">
+    <div>
     <!-- Textarea -->
-      <label class="col-md-2 control-label" for="textarea">Message</label>
+      <label class="col-md-2 control-label">Message</label>
       <div class="col-md-6">                     
-        <textarea class="form-control" id="textarea" name="textarea">default text</textarea>
+        <textarea class="form-control" id="myText" name="textarea">default text</textarea>
       </div>
     </div>
     </div>
@@ -73,8 +74,8 @@
         <!-- Multiple Radios (inline) -->
     <div class="col-md-6">
     <div class="form-group">
-      <label class="col-md-2 control-label">How recent the user posted</label>
-          <div class="col-md-10"> 
+      <label class="col-md-3 control-label">How recent the user posted</label>
+          <div class="col-md-9"> 
             <label class="radio-inline" for="day-0">
               <input name="posted" id="day-0" value="1" checked="checked" type="radio">
               None
@@ -97,8 +98,8 @@
         <!-- Select Basic -->
     <div class="col-md-6">
     <div class="form-group">
-      <label class="col-md-2 control-label" for="selectbasic">There F/F ratio </label>
-      <div class="col-md-10">
+      <label class="col-md-3 control-label" for="selectbasic">There F/F ratio </label>
+      <div class="col-md-9">
         <select id="selectbasic" name="selectbasic" class="form-control">
           <option value="1">None</option>
           <option value="2">&lt;10%</option>
