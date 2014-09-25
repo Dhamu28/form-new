@@ -1,0 +1,106 @@
+<form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Form Name</legend>
+
+<!-- File Button --> 
+<div class="form-group">
+  <label class="col-md-4 control-label" for="filebutton">File Button</label>
+  <div class="col-md-4">
+    <input id="filebutton" name="filebutton" class="input-file" type="file">
+  </div>
+</div>
+
+<!-- Multiple Checkboxes -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="checkboxes">Auto follow followers</label>
+  <div class="col-md-4">
+  <div class="checkbox">
+    <label for="checkboxes-0">
+      <input name="checkboxes" id="checkboxes-0" value="1" type="checkbox">
+      Follow
+    </label>
+    </div>
+  <div class="checkbox">
+    <label for="checkboxes-1">
+      <input name="checkboxes" id="checkboxes-1" value="2" type="checkbox">
+      Not Follow
+    </label>
+    </div>
+  </div>
+</div>
+
+<!-- Multiple Radios -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="radios">DM message when user follows</label>
+  <div class="col-md-4">
+  <div class="radio">
+    <label for="radios-0">
+      <input name="radios" id="radios-0" value="1" checked="checked" type="radio">
+      Yes
+    </label>
+    </div>
+  <div class="radio">
+    <label for="radios-1">
+      <input name="radios" id="radios-1" value="2" type="radio">
+      No
+    </label>
+    </div>
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textarea">Message</label>
+  <div class="col-md-4">                     
+    <textarea class="form-control" id="textarea" name="textarea">default text</textarea>
+  </div>
+</div>
+
+<!-- Multiple Radios (inline) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="radios">Prioritise following the user based on</label>
+  <div class="col-md-4"> 
+    <label class="radio-inline" for="radios-0">
+      <input name="radios" id="radios-0" value="1" checked="checked" type="radio">
+      None
+    </label> 
+    <label class="radio-inline" for="radios-1">
+      <input name="radios" id="radios-1" value="2" type="radio">
+      One day
+    </label> 
+    <label class="radio-inline" for="radios-2">
+      <input name="radios" id="radios-2" value="3" type="radio">
+      One week
+    </label> 
+    <label class="radio-inline" for="radios-3">
+      <input name="radios" id="radios-3" value="4" type="radio">
+      One month
+    </label>
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="selectbasic">There F/F ratio </label>
+  <div class="col-md-4">
+    <select id="selectbasic" name="selectbasic" class="form-control">
+      <option value="1">None</option>
+      <option value="2">&lt;10%</option>
+      <option value="">&lt;20%</option>
+      <option value="">&lt;30%</option>
+      <option value="">&lt;40%</option>
+      <option value="">&lt;50%</option>
+      <option value="">&lt;60%</option>
+      <option value="">&lt;70%</option>
+      <option value="">&lt;80%</option>
+      <option value="">&lt;90%</option>
+      <option value="">&lt;100%</option>
+    </select>
+  </div>
+</div>
+
+</fieldset>
+</form>
+

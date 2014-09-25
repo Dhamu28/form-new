@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<title></title>
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+</head>
+<body>
+   <div class="col-sm-12 col-md-12">
+   <form class="form-horizontal">
+    <legend>From Name</legend>
+<fieldset>
+
+<!-- Form Name -->
+    <legend>1. Upload File Input</legend>
+        <!-- File Button --> 
+        <div class="form-group">
+          <label class="col-md-2 control-label" for="filebutton">Upload File </label>
+          <div class="col-md-10">
+            <input id="filebutton" name="filebutton" class="input-file" type="file">
+          </div>
+        </div>
+</fieldset>
+<fieldset>
+    <legend>2. Auto follow followers</legend>
+    <!-- Multiple Radios -->
+    <div class="form-group">
+      <div class="col-md-4">
+        <label class="radio-inline" for="follow">
+          <input name="follow" id="follow" value="0" checked="checked" type="radio">
+          Yes
+        </label> 
+        <label class="radio-inline" for="unfollow">
+          <input name="follow" id="unfollow" value="1" checked="checked" type="radio">
+          No
+        </label> 
+      </div>
+    </div>
+</fieldset>
+<fieldset>
+    <legend>3. DM message when user follows.</legend>
+    <!-- Multiple Radios -->
+    <div class="form-group">
+      <div class="col-md-4">
+        <label class="radio-inline" for="msj">
+          <input name="DM" id="msj" value="0" checked="checked" type="radio">
+          Yes
+        </label> 
+        <label class="radio-inline" for="nomsj">
+          <input name="DM" id="nomsj" value="1" checked="checked" type="radio">
+          No
+        </label> 
+      </div>
+    <!-- Textarea -->
+      <label class="col-md-2 control-label" for="textarea">Message</label>
+      <div class="col-md-6">                     
+        <textarea class="form-control" id="textarea" name="textarea">default text</textarea>
+      </div>
+    </div>
+</fieldset>
+<fieldset>
+    <legend>4. Prioritise following the user based on.</legend>
+        <!-- Multiple Radios (inline) -->
+    <div class="col-md-6">
+    <div class="form-group">
+      <label class="col-md-2 control-label">How recent the user posted</label>
+          <div class="col-md-10"> 
+            <label class="radio-inline" for="day-0">
+              <input name="posted" id="day-0" value="1" checked="checked" type="radio">
+              None
+            </label> 
+            <label class="radio-inline" for="day-1">
+              <input name="posted" id="day-1" value="2" type="radio">
+              One day
+            </label> 
+            <label class="radio-inline" for="day-2">
+              <input name="posted" id="day-2" value="3" type="radio">
+              One week
+            </label> 
+            <label class="radio-inline" for="day-3">
+              <input name="posted" id="day-3" value="4" type="radio">
+              One month
+            </label>
+          </div>
+        </div>
+    </div>
+        <!-- Select Basic -->
+    <div class="col-md-6">
+    <div class="form-group">
+      <label class="col-md-2 control-label" for="selectbasic">There F/F ratio </label>
+      <div class="col-md-10">
+        <select id="selectbasic" name="selectbasic" class="form-control">
+          <option value="1">None</option>
+          <option value="2">&lt;10%</option>
+          <option value="">&lt;20%</option>
+          <option value="">&lt;30%</option>
+          <option value="">&lt;40%</option>
+          <option value="">&lt;50%</option>
+          <option value="">&lt;60%</option>
+          <option value="">&lt;70%</option>
+          <option value="">&lt;80%</option>
+          <option value="">&lt;90%</option>
+          <option value="">&lt;100%</option>
+        </select>
+      </div>
+    </div>
+    </div>
+</fieldset>
+</form>
+</div>    
+</body></html>
