@@ -42,21 +42,30 @@
     <!-- Multiple Radios -->
     <div class="form-group">
       <div class="col-md-4">
-
-        <label class="radio-inline" for="msj">
-          <input name="DM" id="msj" value="0" checked="checked" type="radio">
+        <script type="text/javascript">
+            function yesnoCheck() {
+                if (document.getElementById('yesCheck').checked) {
+                    document.getElementById('ifYes').style.display = 'block';
+                }
+                else document.getElementById('ifYes').style.display = 'none';
+            }
+        </script>
+        <label class="radio-inline">
+         <input name="DM" type="radio" onclick="javascript:yesnoCheck();" id="yesCheck"> 
           Yes
         </label> 
-        <label class="radio-inline" for="nomsj">
-          <input name="DM" id="nomsj" value="1" checked="checked" type="radio">
+        <label class="radio-inline">
+         <input name="DM" type="radio" onclick="javascript:yesnoCheck();" id="noCheck">
           No
         </label> 
       </div>
+    <div id="ifYes" style="display:none">
     <!-- Textarea -->
       <label class="col-md-2 control-label" for="textarea">Message</label>
       <div class="col-md-6">                     
         <textarea class="form-control" id="textarea" name="textarea">default text</textarea>
       </div>
+    </div>
     </div>
 </fieldset>
 <fieldset>
